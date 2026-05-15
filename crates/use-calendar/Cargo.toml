@@ -1,0 +1,27 @@
+[package]
+name = "use-calendar"
+description = "Composable facade crate for RustUse calendar primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+documentation = "https://docs.rs/use-calendar"
+keywords = ["calendar", "date", "business", "recurrence", "gregorian"]
+categories = ["algorithms", "science"]
+
+[dependencies]
+use-business-day.workspace = true
+use-date.workspace = true
+use-date-range.workspace = true
+use-month.workspace = true
+use-quarter.workspace = true
+use-recurrence.workspace = true
+use-weekday.workspace = true
+use-year.workspace = true
+
+[lints]
+workspace = true

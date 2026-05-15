@@ -38,8 +38,8 @@ pub use use_year::*;
 #[cfg(test)]
 mod tests {
     use super::{
-        BusinessDayConvention, CalendarDate, Quarter, RecurrenceFrequency, adjust_business_day,
-        business_days_between, date_range, quarter_for_month, recurring_dates,
+        adjust_business_day, business_days_between, date_range, quarter_for_month, recurring_dates,
+        BusinessDayConvention, CalendarDate, Quarter, RecurrenceFrequency,
     };
 
     #[test]

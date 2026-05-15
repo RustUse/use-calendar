@@ -137,7 +137,7 @@ pub fn is_valid_month(month: u8) -> bool {
 
 #[cfg(test)]
 mod tests {
-    use super::{Month, MonthError, days_in_month, is_valid_month, month_from_number};
+    use super::{days_in_month, is_valid_month, month_from_number, Month, MonthError};
 
     #[test]
     fn maps_month_numbers_and_names() {

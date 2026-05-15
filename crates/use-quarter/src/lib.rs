@@ -94,8 +94,8 @@ pub fn month_in_quarter(month: u8, quarter: Quarter) -> Result<bool, QuarterErro
 #[cfg(test)]
 mod tests {
     use super::{
-        Quarter, QuarterError, month_in_quarter, quarter_end_date, quarter_for_month,
-        quarter_start_date,
+        month_in_quarter, quarter_end_date, quarter_for_month, quarter_start_date, Quarter,
+        QuarterError,
     };
     use use_date::CalendarDate;
 

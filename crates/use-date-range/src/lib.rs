@@ -21,7 +21,7 @@
 //! assert_eq!(intersection(range, other).unwrap().start(), CalendarDate::new(2024, 1, 3).unwrap());
 //! ```
 
-use use_date::{CalendarDate, add_days, days_between};
+use use_date::{add_days, days_between, CalendarDate};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct DateRange {
@@ -91,7 +91,7 @@ pub fn intersection(a: DateRange, b: DateRange) -> Option<DateRange> {
 
 #[cfg(test)]
 mod tests {
-    use super::{DateRange, DateRangeError, date_range, intersection, overlaps};
+    use super::{date_range, intersection, overlaps, DateRange, DateRangeError};
     use use_date::CalendarDate;
 
     #[test]

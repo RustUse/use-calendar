@@ -35,7 +35,11 @@ pub fn is_leap_year(year: i32) -> bool {
 
 #[must_use]
 pub fn days_in_year(year: i32) -> u16 {
-    if is_leap_year(year) { 366 } else { 365 }
+    if is_leap_year(year) {
+        366
+    } else {
+        365
+    }
 }
 
 impl CalendarYear {
@@ -70,7 +74,7 @@ pub fn last_day_of_year(year: i32) -> Result<CalendarDate, YearError> {
 
 #[cfg(test)]
 mod tests {
-    use super::{CalendarYear, days_in_year, first_day_of_year, is_leap_year, last_day_of_year};
+    use super::{days_in_year, first_day_of_year, is_leap_year, last_day_of_year, CalendarYear};
     use use_date::CalendarDate;
 
     #[test]

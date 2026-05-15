@@ -19,7 +19,7 @@
 //! assert_eq!(adjust_business_day(saturday, BusinessDayConvention::Following), CalendarDate::new(2024, 5, 20).unwrap());
 //! ```
 
-use use_date::{CalendarDate, add_days};
+use use_date::{add_days, CalendarDate};
 use use_weekday::weekday_for_date;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -134,8 +134,8 @@ pub fn adjust_business_day(date: CalendarDate, convention: BusinessDayConvention
 #[cfg(test)]
 mod tests {
     use super::{
-        BusinessDayConvention, BusinessDayError, add_business_days, adjust_business_day,
-        business_days_between, is_business_day, next_business_day, previous_business_day,
+        add_business_days, adjust_business_day, business_days_between, is_business_day,
+        next_business_day, previous_business_day, BusinessDayConvention, BusinessDayError,
     };
     use use_date::CalendarDate;
 

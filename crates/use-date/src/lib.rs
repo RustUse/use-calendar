@@ -145,7 +145,7 @@ pub fn add_days(date: CalendarDate, days: i64) -> CalendarDate {
 
 #[cfg(test)]
 mod tests {
-    use super::{add_days, day_of_year, days_between, is_valid_date, CalendarDate, DateError};
+    use super::{CalendarDate, DateError, add_days, day_of_year, days_between, is_valid_date};
 
     #[test]
     fn validates_dates_and_day_of_year() {

@@ -15,7 +15,7 @@
 //! assert!(!is_weekend(weekday));
 //! ```
 
-use use_date::{days_between, CalendarDate};
+use use_date::{CalendarDate, days_between};
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Weekday {
@@ -99,7 +99,7 @@ pub fn is_weekday(weekday: Weekday) -> bool {
 
 #[cfg(test)]
 mod tests {
-    use super::{is_weekday, is_weekend, weekday_for_date, Weekday, WeekdayError};
+    use super::{Weekday, WeekdayError, is_weekday, is_weekend, weekday_for_date};
 
     #[test]
     fn calculates_known_weekdays() {

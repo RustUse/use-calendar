@@ -1,0 +1,81 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-date"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-weekday"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-month"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-year"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-quarter"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-date-range"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-business-day"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-recurrence"
+release = true
+version_group = "rustuse-calendar"
+
+[[package]]
+name = "use-calendar"
+release = true
+version_group = "rustuse-calendar"
+changelog_update = true
+changelog_path = "./CHANGELOG.md"
+changelog_include = [
+  "use-date",
+  "use-weekday",
+  "use-month",
+  "use-year",
+  "use-quarter",
+  "use-date-range",
+  "use-business-day",
+  "use-recurrence",
+]
+
+[changelog]
+header = """# Changelog
+
+## Unreleased
+"""
+protect_breaking_commits = true
+sort_commits = "oldest"
+commit_parsers = [
+  { message = "^feat(?:\\([^)]+\\))?!?: .+", group = "Added" },
+  { message = "^fix(?:\\([^)]+\\))?!?: .+", group = "Fixed" },
+  { message = "^security(?:\\([^)]+\\))?!?: .+", group = "Security" },
+  { message = "^(?:refactor|perf|change)(?:\\([^)]+\\))?!?: .+", group = "Changed" },
+  { message = "^docs(?:\\([^)]+\\))?!?: .+", group = "Documentation" },
+  { message = "^(?:build|ci|chore|deps|test)(?:\\([^)]+\\))?!?: .+", group = "Tooling" },
+  { footer = "^changelog: ?ignore$", skip = true },
+  { message = "^.*", group = "Changed" },
+]

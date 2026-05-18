@@ -85,12 +85,12 @@ fn advance_date(
         RecurrenceFrequency::Daily => {
             let days = i64::try_from(total).map_err(|_| RecurrenceError::DateOverflow)?;
             Ok(add_days(start, days))
-        }
+        },
         RecurrenceFrequency::Weekly => {
             let days = total.checked_mul(7).ok_or(RecurrenceError::DateOverflow)?;
             let days = i64::try_from(days).map_err(|_| RecurrenceError::DateOverflow)?;
             Ok(add_days(start, days))
-        }
+        },
         RecurrenceFrequency::Monthly => add_months_clamped(start, total),
         RecurrenceFrequency::Yearly => add_years_clamped(start, total),
     }

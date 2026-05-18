@@ -125,7 +125,7 @@ pub fn days_in_month(year: i32, month: u8) -> Result<u8, MonthError> {
             } else {
                 28
             }
-        }
+        },
         _ => return Err(MonthError::InvalidMonth),
     })
 }
@@ -137,7 +137,7 @@ pub fn is_valid_month(month: u8) -> bool {
 
 #[cfg(test)]
 mod tests {
-    use super::{days_in_month, is_valid_month, month_from_number, Month, MonthError};
+    use super::{Month, MonthError, days_in_month, is_valid_month, month_from_number};
 
     #[test]
     fn maps_month_numbers_and_names() {

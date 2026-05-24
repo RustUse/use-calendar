@@ -21,18 +21,18 @@ publish = false
 readme = "README.md"
 repository = "https://github.com/RustUse/use-calendar"
 rust-version = "1.95.0"
-version = "0.0.1"
+version = "0.0.2"
 
 [workspace.dependencies]
-use-business-day = { version = "0.0.1", path = "crates/use-business-day" }
-use-calendar = { version = "0.0.1", path = "crates/use-calendar" }
-use-date = { version = "0.0.1", path = "crates/use-date" }
-use-date-range = { version = "0.0.1", path = "crates/use-date-range" }
-use-month = { version = "0.0.1", path = "crates/use-month" }
-use-quarter = { version = "0.0.1", path = "crates/use-quarter" }
-use-recurrence = { version = "0.0.1", path = "crates/use-recurrence" }
-use-weekday = { version = "0.0.1", path = "crates/use-weekday" }
-use-year = { version = "0.0.1", path = "crates/use-year" }
+use-business-day = { version = "0.0.2", path = "crates/use-business-day" }
+use-calendar = { version = "0.0.2", path = "crates/use-calendar" }
+use-date = { version = "0.0.2", path = "crates/use-date" }
+use-date-range = { version = "0.0.2", path = "crates/use-date-range" }
+use-month = { version = "0.0.2", path = "crates/use-month" }
+use-quarter = { version = "0.0.2", path = "crates/use-quarter" }
+use-recurrence = { version = "0.0.2", path = "crates/use-recurrence" }
+use-weekday = { version = "0.0.2", path = "crates/use-weekday" }
+use-year = { version = "0.0.2", path = "crates/use-year" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

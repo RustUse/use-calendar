@@ -4,7 +4,7 @@ version = 4
 
 [[package]]
 name = "use-business-day"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-date",
  "use-weekday",
@@ -12,7 +12,7 @@ dependencies = [
 
 [[package]]
 name = "use-calendar"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-business-day",
  "use-date",
@@ -26,29 +26,29 @@ dependencies = [
 
 [[package]]
 name = "use-date"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-date-range"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-date",
 ]
 
 [[package]]
 name = "use-month"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-quarter"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-date",
 ]
 
 [[package]]
 name = "use-recurrence"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-date",
  "use-month",
@@ -56,14 +56,14 @@ dependencies = [
 
 [[package]]
 name = "use-weekday"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-date",
 ]
 
 [[package]]
 name = "use-year"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-date",
 ]
